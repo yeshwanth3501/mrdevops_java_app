@@ -9,8 +9,16 @@ pipeline{
                     url: "https://github.com/yeshwanth3501/mrdevops_java_app.git"
                    ) 
                 }
+             
+            }
+             stage('unit test maven'){
+            steps{
+                   script{
+                    maventest()
 
+                   }
+                }
+             
             }
         }
     }
-
