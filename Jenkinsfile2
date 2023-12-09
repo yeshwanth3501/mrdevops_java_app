@@ -1,10 +1,11 @@
+@Library ('my-shared-jenkins')
 pipeline{
     agent any
     stages{
         stage('git checkout'){
-            steps{
-                script {
-                    git branch: 'main', url: 'https://github.com/yeshwanth3501/mrdevops_java_app.git'
+             branch: "test"
+              url: "https://github.com/yeshwanth3501/mrdevops_java_app.git"
+                   
                 }
 
             }
