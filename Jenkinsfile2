@@ -8,17 +8,15 @@ pipeline{
                     branch: "test",
                     url: "https://github.com/yeshwanth3501/mrdevops_java_app.git"
                    ) 
-                }
-             
+                } 
             }
             stage('Unit Test maven'){
-         
             steps{
                script{
                    
                    mavenTest()
                }
             }
-        }
+           }
         }
     }
